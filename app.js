@@ -24,9 +24,6 @@ for(var i = 1 ; i <= num1 ;i++){
         if(i == 1){
             table += `<td id="row1" >${res}</td>`;
         } 
-        else if(i==1){
-            table += `<td id="rowHead" >${res}</td>`;
-        }
         else if(j == 1){
             table += `<td id="diagRow" >${res}</td>`;
         }

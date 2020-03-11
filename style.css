@@ -23,4 +23,5 @@ td{
 }
 #rowHead, #colHead{
     border:none;
+    background-color: green;
 }
