@@ -10,23 +10,22 @@ if (num1<5 || num1>20 || isNaN(num1)==true){ // this ensures that num1 will be b
     output.innerHTML = printResult; //prints this into the <h2> from the index.html
 
 }
-var table = `<table border="1"><tbody>`;
-
-for(var i = 0 ; i <= num1 ;i++){
+var table = `<table><tbody>`;
+var tName = document.getElementById("tableName").innerHTML = `Times Table ${num1} x ${num1}`;
+for(var i = 1 ; i <= num1 ;i++){
     table += "<tr>"
-
     for(var j = 0 ; j <= num1 ;j++){
         var res=i*j;
-        if(i == 0){
-            table += `<td style="background-color: yellow;">${i}</td>`
+        if(i == 1){
+            table += `<td style="background-color: blue; font-weight:bold;">${res}</td>`
         }
 
         else if(i == j){
-            table += `<td style="background-color: yellow;" >${res}</td>`
+            table += `<td style="background-color: yellow; font-weight:bold;" >${res}</td>`
         }
 
         else{
-            table += `<td>${j}</td>`
+            table += `<td>${res}</td>`
         }
     }
 
