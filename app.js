@@ -11,7 +11,23 @@ if (num1<5 || num1>20){ // this ensures that num1 will be between 5 and 20.
 
 }
 
+var result = ' ';
+for (var i = 0; i < 13; i++) {
 
+    for (var j = 0; j < 13; j++) {
 
+        if(i == 0 && j > 0){
+          result += ' ' + j + ' ';
+        } 
+        else if(j == 0 && i>0){
+          result += ' ' + i + ' ';
+        } 
+        else if(i>0 && j>0){
+        result += (i*j) + ' ';
+        }
+    }
+    result += '\n'
+}
 
+console.log(result);
 
