@@ -4,3 +4,6 @@ h1 {
 #output{
     color:red;
 }
+table{
+    border-collapse: collapse;
+}

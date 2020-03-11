@@ -13,13 +13,13 @@ if (num1<5 || num1>20){ // this ensures that num1 will be between 5 and 20.
 var table = `<table border="1"><tbody>`;
 
 
-for(var i = 0 ; i < num1 ;i++){
+for(var i = 0 ; i <= num1 ;i++){
     table += "<tr>"
 
-    for(var j = 0 ; j < num1 ;j++){
+    for(var j = 0 ; j <= num1 ;j++){
         var res=i*j;
         if(i == 0){
-            table += `<td style="background-color: yellow;">${res}</td>`
+            table += `<td style="background-color: yellow;">${i}</td>`
         }
 
         else if(i == j){
@@ -27,7 +27,7 @@ for(var i = 0 ; i < num1 ;i++){
         }
 
         else{
-            table += `<td>${res}</td>`
+            table += `<td>${j}</td>`
         }
     }
 
