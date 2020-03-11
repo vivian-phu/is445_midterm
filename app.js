@@ -14,12 +14,14 @@ var table = `<table><tbody>`;
 var tName = document.getElementById("tableName").innerHTML = `Times Table ${num1} x ${num1}`;
 for(var i = 1 ; i <= num1 ;i++){
     table += "<tr>"
-    for(var j = 0 ; j <= num1 ;j++){
+    for(var j = 1 ; j <= num1 ;j++){
         var res=i*j;
         if(i == 1){
-            table += `<td style="background-color: blue; font-weight:bold;">${res}</td>`
+            table += `<td style="background-color: yellow; font-weight:bold;">${res}</td>`
         }
-
+        else if(j == 1){
+            table += `<td style="background-color: yellow; font-weight:bold;" >${res}</td>`
+        }
         else if(i == j){
             table += `<td style="background-color: yellow; font-weight:bold;" >${res}</td>`
         }
