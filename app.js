@@ -10,24 +10,41 @@ if (num1<5 || num1>20){ // this ensures that num1 will be between 5 and 20.
     output.innerHTML = printResult; //prints this into the <h2> from the index.html
 
 }
+var table = `<table border="1"><tbody>`;
 
-var result = ' ';
-for (var i = 0; i < 13; i++) {
 
-    for (var j = 0; j < 13; j++) {
+for(var i = 0 ; i < num1 ;i++){
 
-        if(i == 0 && j > 0){
-          result += ' ' + j + ' ';
-        } 
-        else if(j == 0 && i>0){
-          result += ' ' + i + ' ';
-        } 
-        else if(i>0 && j>0){
-        result += (i*j) + ' ';
-        }
+    table += "<tr>"
+
+    for(var j = 0 ; j < num1 ;j++){
+
+    if(i == 0){
+
+    table += `<td style="background-color: green;">${i},${j}</td>`
+
     }
-    result += '\n'
+
+    else if(i == j){
+
+    table += `<td style="background-color: yellow;" >${i},${j}</td>`
+
+    }
+
+    else{
+
+    table += `<td>${i},${j}</td>`
+
+    }
+
+    }
+
+table += "</tr>"
+
 }
 
-console.log(result);
+table += "</tbody></table>";
+
+document.write(table);
+
 
