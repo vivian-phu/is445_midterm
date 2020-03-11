@@ -14,29 +14,21 @@ var table = `<table border="1"><tbody>`;
 
 
 for(var i = 0 ; i < num1 ;i++){
-
     table += "<tr>"
 
     for(var j = 0 ; j < num1 ;j++){
+        var res=i*j;
+        if(i == 0){
+            table += `<td style="background-color: yellow;">${res}</td>`
+        }
 
-    if(i == 0){
+        else if(i == j){
+            table += `<td style="background-color: yellow;" >${res}</td>`
+        }
 
-    table += `<td style="background-color: green;">${i},${j}</td>`
-
-    }
-
-    else if(i == j){
-
-    table += `<td style="background-color: yellow;" >${i},${j}</td>`
-
-    }
-
-    else{
-
-    table += `<td>${i},${j}</td>`
-
-    }
-
+        else{
+            table += `<td>${res}</td>`
+        }
     }
 
 table += "</tr>"
