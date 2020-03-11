@@ -16,3 +16,10 @@ td{
 #tableName{
     text-align: center;
 }
+#row1, #diagRow, #col1{
+    background-color: yellow;
+    font-weight: bold;
+}
+#rowHead, #colHead{
+    border:none;
+}
