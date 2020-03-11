@@ -19,6 +19,7 @@ for(var i = 1 ; i <= num1 ;i++){
     table += "<tr>"
     for(var j = 1 ; j <= num1 ;j++){
         var res=i*j;
+        
         if(i == 1){
             table += `<td id="row1" >${res}</td>`;
         } 
