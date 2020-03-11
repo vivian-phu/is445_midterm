@@ -12,6 +12,7 @@ table{
 }
 td{
     border: 1px solid black;
+    table-layout: fixed;
 }
 #tableName{
     text-align: center;

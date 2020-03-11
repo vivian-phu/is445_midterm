@@ -17,12 +17,16 @@ var table = `<table><tbody>`;
 
 for(var i = 1 ; i <= num1 ;i++){
     table += "<tr>"
+    
     for(var j = 1 ; j <= num1 ;j++){
         var res=i*j;
         
         if(i == 1){
             table += `<td id="row1" >${res}</td>`;
         } 
+        else if(i==1){
+            table += `<td id="rowHead" >${res}</td>`;
+        }
         else if(j == 1){
             table += `<td id="diagRow" >${res}</td>`;
         }
@@ -41,7 +45,7 @@ table += "</tr>"
 
 table += "</tbody></table>";
 if (val=="true"){
-    var tName = document.getElementById("tableName").innerHTML = `Times Table ${num1} x ${num1}`;
+    var tName = document.getElementById("tableName").innerHTML = `Times Table - ${num1}x${num1}`;
 
     document.write(table);
 }
